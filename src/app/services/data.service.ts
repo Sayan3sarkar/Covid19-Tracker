@@ -15,7 +15,7 @@ export class DataService {
     private mm: string = this.MONTH.toString().length === 1 ? "0"+this.MONTH.toString() : this.MONTH.toString();
     private yyyy:number = new Date().getFullYear();
     // private globalDataUrl = `https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/${+this.mm}-${+this.dd}-${this.yyyy}.csv`;
-    private globalDataUrl = `https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/02-25-2021.csv`;
+    private globalDataUrl = `https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/02-26-2021.csv`;
     private dateWiseDataUrl = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv";
     
     constructor(private http: HttpClient) {}

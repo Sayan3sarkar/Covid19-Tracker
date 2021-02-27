@@ -4,28 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { GoogleChartsModule } from 'angular-google-charts';
-
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component';
-import { CountriesComponent } from './components/countries/countries.component';
-import { DashboardCardComponent } from './components/shared/dashboard-card/dashboard-card.component';
-import { SpinnerComponent } from './components/shared/spinner/spinner.component';
+import { HomeModule } from '@modules/home-module/home-module.module';
+import { SharedModule } from '@modules/shared-module/shared-module.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    HomeComponent,
-    CountriesComponent,
-    DashboardCardComponent,
-    SpinnerComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    GoogleChartsModule
+    HomeModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
