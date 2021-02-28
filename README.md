@@ -1,6 +1,6 @@
 # Covid19Tracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
+A simple Covid 19 tracker created with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
 
 ## Development server
 
